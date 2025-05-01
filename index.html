@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document with Script</title>
+    <style>
+        /* CSS styles  */
+        #dynamic-text {
+            color: blue;
+            font-size: 20px;
+        }
+        #dynamic-box {
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 id="dynamic-text">This is the initial text.</h1>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <div id="dynamic-box">
+        <p>This box can have elements added or removed!</p>
+        <button onclick="addElement()">Add Element</button>
+        <button onclick="removeElement()">Remove Element</button>
+    </div>
+
+</body>
+</html>
